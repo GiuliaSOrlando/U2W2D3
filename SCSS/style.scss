@@ -1,0 +1,52 @@
+@import "partials/reset";
+@import "partials/colors";
+@import "partials/font";
+@import "partials/spacings";
+@import "partials/buttons";
+
+body {
+  width: 100%;
+}
+
+nav {
+  background-color: map-get($map: $colors, $key: light-blue);
+  display: flex;
+  align-items: start;
+  img {
+    width: 125px;
+  }
+  ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    li > a {
+      text-decoration: none;
+      font-size: $base-font-size * 1.6;
+      font-family: $generic-font-family;
+      color: map-get($map: $colors, $key: almost-white);
+    }
+  }
+}
+
+.hero {
+  background-color: map-get($map: $colors, $key: violet);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: $base-font-size * 1.2;
+    font-family: $generic-font-family;
+    color: map-get($map: $colors, $key: light-blue);
+    padding-bottom: 25px;
+  }
+
+  .button {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+}
