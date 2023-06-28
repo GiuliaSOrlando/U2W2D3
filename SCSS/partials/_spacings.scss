@@ -1,0 +1,36 @@
+$breakpoints: (
+  sm: 10px,
+  normal: 20px,
+  md: 40px,
+  lg: 60px,
+  xl: 80px,
+  xxl: 100px,
+);
+
+@each $size, $value in $breakpoints {
+  .padding-#{$size}-block {
+    padding: #{$value};
+    display: block;
+  }
+}
+
+@each $size, $value in $breakpoints {
+  .padding-#{$size}-inline {
+    padding: #{$value};
+    display: inline;
+  }
+}
+
+@each $size, $value in $breakpoints {
+  .margin-#{$size}-block {
+    margin: #{$value};
+    display: block;
+  }
+}
+
+@each $size, $value in $breakpoints {
+  .margin-#{$size}-inline {
+    margin: #{$value};
+    display: inline;
+  }
+}

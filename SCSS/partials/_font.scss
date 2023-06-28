@@ -8,4 +8,11 @@ $base-font-weight: 400;
   font-size: 24px;
   font-weight: 700;
   padding: 4px;
+  font-family: $generic-font-family;
+  color: map-get($map: $colors, $key: violet);
+}
+
+.title-big {
+  @include title-big();
+  padding-bottom: 20px;
 }
